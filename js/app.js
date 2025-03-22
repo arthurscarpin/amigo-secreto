@@ -2,9 +2,14 @@ let amigosAdicionados = [];
 
 function adicionar() {
     let nomeDoAmigo = document.getElementById('nome-amigo').value.trim();
-    
-    if (nomeDoAmigo === "" || amigosAdicionados.includes(nomeDoAmigo)) {
+
+    if (nomeDoAmigo === "") {
         alert("Informe o nome do amigo!");
+        return;
+    }
+
+    if (amigosAdicionados.includes(nomeDoAmigo)) {
+        alert('Nome já adicionado!');
         return;
     }
 
@@ -26,7 +31,7 @@ function atualizarLista() {
             amigosAdicionados.splice(index, 1);
             atualizarLista();
         });
-    
+
         listaAmigos.appendChild(paragrafo);
     });
 }
