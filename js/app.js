@@ -32,8 +32,8 @@ function atualizarLista() {
 }
 
 function sortear() {
-    if (amigosAdicionados.length < 2) {
-        alert("Adicione pelo menos dois amigos para sortear.");
+    if (amigosAdicionados.length < 4) {
+        alert("Adicione pelo menos 4 amigos para sortear.");
         return;
     }
 
