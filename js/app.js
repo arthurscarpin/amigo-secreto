@@ -4,7 +4,7 @@ function adicionar() {
     let nomeDoAmigo = document.getElementById('nome-amigo').value.trim();
     
     if (nomeDoAmigo === "" || amigosAdicionados.includes(nomeDoAmigo)) {
-        alert("Nome inválido ou já adicionado.");
+        alert("Informe o nome do amigo!");
         return;
     }
 
