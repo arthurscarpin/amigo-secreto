@@ -24,7 +24,7 @@ function sortear() {
     listaSorteio.innerHTML = '';
     for (let i = 0; i < amigosSorteados.length; i++) {
         let paragrafo = document.createElement('p');
-        paragrafo.textContent = `${amigosAdicionados[i]} -> ${amigosSorteados[i]}`
+        paragrafo.textContent = `${amigosAdicionados[i]} --> ${amigosSorteados[i]}`
         listaSorteio.appendChild(paragrafo);
     }
 }
