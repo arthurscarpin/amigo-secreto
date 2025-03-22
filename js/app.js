@@ -3,8 +3,8 @@ let amigosAdicionados = [];
 function adicionar() {
     let nomeDoAmigo = document.getElementById('nome-amigo').value.trim();
 
-    if (nomeDoAmigo === "") {
-        alert("Informe o nome do amigo!");
+    if (nomeDoAmigo === '') {
+        alert('Informe o nome do amigo!');
         return;
     }
 
@@ -25,7 +25,7 @@ function atualizarLista() {
     amigosAdicionados.forEach((amigo, index) => {
         let paragrafo = document.createElement('p');
         paragrafo.textContent = amigo;
-        paragrafo.style.cursor = "pointer";
+        paragrafo.style.cursor = 'pointer';
 
         paragrafo.addEventListener('click', () => {
             amigosAdicionados.splice(index, 1);
@@ -38,7 +38,7 @@ function atualizarLista() {
 
 function sortear() {
     if (amigosAdicionados.length < 4) {
-        alert("Adicione pelo menos 4 amigos para sortear.");
+        alert('Adicione pelo menos 4 amigos para sortear.');
         return;
     }
 
